@@ -1,15 +1,27 @@
 package javaExeCandO;
 
-public class Student { //this is a name of the class. we can define here what we want, this is called atributes.
+public class Student {
+
+	String name;
+	int roll_no;
+	int phone;
+	String address;
+	
+	
+	Student(String name, int roll_no, int phone, String address) {
 		
-		// defined attributions about student
-		String firstName;
-		String lastName;
-		double gpa;
-		String major;
-		int age;
-		boolean onProbation;
+		System.out.println("Mam na imie " + name + " i jestem numer " + roll_no + ". Moj nr telefonu to " + phone + " i mieszkam w " + address);
+	}
+	
+	public static void main(String[] args) {
+		
+
+		Student one = new Student("John", 2, 123412, "Amityville");
+		Student two = new Student("Sam", 3, 123455, "Lindenhurst");
+		
+
+		
 		
 	}
 
-
+}
